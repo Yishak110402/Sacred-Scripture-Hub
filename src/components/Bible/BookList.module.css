@@ -1,0 +1,58 @@
+.bookListContainer{
+    display: flex;
+    flex-basis: 20%;
+    height: 90vh;
+    flex-shrink: 1;
+    justify-content: space-between;
+    max-width: 17rem;
+    border-top: 3px solid #015E87;
+}
+.bookList{
+    overflow-y: scroll;
+    flex-basis:70%;
+    flex-grow: 0;
+}
+.bookList li{
+    cursor: pointer;
+    /* border: 1px solid #015E87; */
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    flex-grow: 0;
+    overflow-x: hidden;
+    background-color: #FFEDD5;
+    color: #015E87;
+}
+.chapters{
+    overflow-y: scroll;
+    flex-basis: 20%;
+    overflow-x: hidden;
+    padding-right: 5rem;
+    
+}
+.chapters li{
+    height: 1.7rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 1rem; */
+    /* border: 1px solid #015E87; */
+    color: #015E87;
+    background-color: #FFEDD5;
+    display: block;
+    width: 8rem;
+    cursor: pointer;
+}
+
+:global(#activeBook){
+    background-color: #015E87;
+    color: #FFEDD5;
+    border-top: #015E87;
+}
+:global(#activeChapter){
+    color: #FFEDD5;
+    background-color: #015E87;
+    border-top: #015E87;
+}

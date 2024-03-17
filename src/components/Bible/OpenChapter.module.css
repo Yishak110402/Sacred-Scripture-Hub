@@ -1,0 +1,9 @@
+.verse{
+    font-size: 1.1rem;
+    margin: 0.7rem 0rem;
+    text-align: justify;
+}
+.verse span{
+    font-size: 0.9rem;
+    margin-right: 1rem;
+}
