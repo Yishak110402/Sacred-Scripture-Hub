@@ -1,0 +1,38 @@
+.about{
+    width: 100%;
+    padding: 3rem;
+    background-color: #FFEDD5;
+    color: #708087;
+}
+.aboutText{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+.aboutText> h1{
+    font-size: 3rem;
+}
+.aboutText img{
+    width: 40%;
+    height: 60%;
+    border-radius: 10px;
+}
+.aboutText div{
+    padding-right: 6rem;
+    padding-top: 3rem;
+}
+.aboutText p{
+    font-size: 1.1rem;
+    margin-bottom: 1.7rem;
+    line-height: 1.5rem;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+.newspaperForm{
+    /* width: 100vw; */
+    background-position: left 70%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 2rem 5rem;
+    position: relative;
+
+}
+.newspaperForm form{
+    display: flex;
+    flex-flow: column;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+.newspaperForm input{
+    width: 10rem;
+    padding: 0.5rem;
+    background-color: #f7f7f7;
+    border: none;
+}
+.newspaperForm h1{
+    color: #FFEDD5;
+    background-clip: text;
+}
+.newspaperForm button{
+    width: 5rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #015E87, #FFEDD5);
+    background-size: 500%;
+    background-position: left;
+    color:#FFEDD5;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.newspaperForm button:hover,
+.newspaperForm button:focus{
+    background-position: right;
+    color: #015E87;
+}
+
+.verification{
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    position: absolute;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: popup;
+    animation-direction: forwards;
+    animation-duration: 0.5s;
+}
+@keyframes popup{
+    from{
+        opacity: 0;
+        transform: scale(0.01);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.verification div{
+    background-color: #FFEDD5;
+    color: #015E87;
+    padding: 3rem;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+}
+.verification div h1{
+    color: #015E87;
+}

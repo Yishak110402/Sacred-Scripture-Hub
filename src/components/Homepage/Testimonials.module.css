@@ -1,0 +1,56 @@
+.testimonials{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    padding: 7rem 3rem;
+    padding-bottom: 11rem;
+    background-color: #015E87;
+    color: #FFEDD5;
+}
+.testimonials > h1{
+    font-size: 4rem;
+    transform: rotate(-90deg);
+    margin-top: -4rem;
+    flex-basis: 10rem;
+    margin-left: -10rem;
+    margin-bottom: -10rem;
+    margin-right: -5rem;
+    
+}
+.testimonials div{
+    width: 65rem;
+    margin-top: 4rem;
+    margin-left: -40rem;
+    position: relative;
+}
+.testimonials p{
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+    font-style: italic;
+}
+.testimonials h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 6rem;
+    margin-bottom: 1.3rem;
+}
+.testimonials button{
+    position: absolute;
+    border: none;
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+    border-radius: 100%;
+    font-size: 3rem;
+    background-color: transparent;
+    color: #FFEDD5;
+}
+.leftArrow{
+    top: 50%;
+    left: 0;
+}
+.rightArrow{
+    top: 50%;
+    right: 0;
+}

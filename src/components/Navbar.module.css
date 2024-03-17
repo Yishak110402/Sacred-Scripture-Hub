@@ -1,0 +1,28 @@
+.desktopNav{
+    /* width: 100vw; */
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 1rem 4rem;
+    background-color: #FFEDD5;
+}
+
+.brand a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #015E87 ;
+    margin-top: 3rem;
+}
+.navLinks ul{
+    display: flex;
+    gap: 3rem;
+}
+.navLinks li a{
+    text-decoration: none;
+    color: #015E87;
+    font-size: 1.05rem;
+    display: block;
+    padding: 0.7rem;
+    margin-bottom: -0.9rem;
+}

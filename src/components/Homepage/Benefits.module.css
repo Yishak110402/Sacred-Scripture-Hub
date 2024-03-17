@@ -1,0 +1,30 @@
+.benefits{
+   background-color: #015E87;
+   padding: 5rem 3rem;
+   color: #FFEDD5;
+}
+.benefitsContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.benefitsContainer div{
+    text-align: center;
+    margin-top: 3rem;
+    width: 20%;
+}
+.benefitsContainer div svg{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 2rem;
+    fill: #FFEDD5;
+}
+.benefitsContainer h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+    width: 150%;
+    margin-left: -5rem;
+}
+.benefitsContainer p{
+    font-size: 0.9rem;
+}
