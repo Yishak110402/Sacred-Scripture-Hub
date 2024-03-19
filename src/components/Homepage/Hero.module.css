@@ -3,6 +3,7 @@
     height: 89.5vh;
     background-position: center;
     background-size: cover;
+    /* opacity: 0.80; */
 }
 .heroText.show{
     transform: translateY(0);
@@ -15,8 +16,9 @@
     flex-flow: column;
     color: #FFB855;
     justify-content: center;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.6) 70%, transparent);
     /* padding-left: 3.5rem; */
-    background-color: rgba(0,0,0,0.1);
+    /* background-color: rgba(0,0,0,0.5); */
     overflow-x: hidden;
 }
 .heroText h1{
@@ -24,6 +26,7 @@
     font-weight: 200;
     margin-top: 16rem;
     margin-left: 3.5rem;
+    opacity: 1;
 }
 .heroText p{
     font-size: 1.1rem;

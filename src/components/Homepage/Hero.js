@@ -1,5 +1,5 @@
 import styles from './Hero.module.css'
-import herobgpic from '../../assets/herobgpic.jpeg'
+import herobgpic from '../../assets/herobgpic.jpg'
 import { Link } from 'react-router-dom'
 
 export default function Hero(){
