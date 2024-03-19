@@ -1,5 +1,6 @@
 import styles from './Hero.module.css'
 import herobgpic from '../../assets/herobgpic.jpeg'
+import { Link } from 'react-router-dom'
 
 export default function Hero(){
 
@@ -8,7 +9,7 @@ export default function Hero(){
        <div className={`${styles.heroText}`}>
             <h1>Discover the Sacred Scripture at our Hub</h1>
             <p>Improve your knowledge of the word of God by reading the bible and getting random bible quotes</p>
-            <button>Start Reading</button>
+            <Link to="/bible">Start Reading</Link>
        </div>
      </div>)
 }

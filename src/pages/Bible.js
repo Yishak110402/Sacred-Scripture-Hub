@@ -9,7 +9,7 @@ export default function Bible({ books, setBooks }) {
   
 
   return (
-    <div style={{ display: "flex", justifyContent: "space-between", backgroundColor:"#FFEDD5", color:"#FFEDD5"}}>
+    <div className="bibleContainer" style={ { display: "flex", justifyContent: "space-between", backgroundColor:"#FFEDD5", color:"#FFEDD5"}}>
       <BookList
         books={books}
         selectedBookIndex={selectedBookIndex}

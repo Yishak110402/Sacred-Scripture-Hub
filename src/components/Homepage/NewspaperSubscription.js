@@ -8,7 +8,7 @@ export default function NewspaperSubscription(){
         lName:"",
         email: ""
     })
-    const [showVerification, setShowVerification] = useState(true)
+    const [showVerification, setShowVerification] = useState(false)
 
     function handleSubscription(e){
         e.preventDefault();

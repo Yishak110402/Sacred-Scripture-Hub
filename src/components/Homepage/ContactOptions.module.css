@@ -18,3 +18,25 @@
 .contactOptions p{
     font-size: 1.4rem;
 }
+
+@media(max-width:850px){
+    .contactsContainer svg{
+        width: 80px;
+        height: 80px;
+    }
+    .contactOptions h1{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:470px){
+    .contactsContainer{
+        gap: 1rem;
+    }
+    .contactsContainer p{
+        font-size: 0.85rem;
+    }
+    .contactsContainer svg{
+        height: 50px;
+        width: 50px;
+    }
+}

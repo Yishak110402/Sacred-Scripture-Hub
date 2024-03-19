@@ -42,3 +42,10 @@ li{
   90%,
   100%{box-shadow:0 0 0 0   , 40px 0,-40px 0,0 40px,0 -40px}
 }
+
+@media(max-width:950px){
+  .bibleContainer{
+    flex-flow: column;
+    width: 100vw;
+  }
+}

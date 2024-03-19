@@ -31,7 +31,7 @@ export default function OpenChapter({selectedBook, chapter, setChapter}){
      },[selectedBook])
 
     return(
-        <div style={{position:"relative" , width:"100%", overflowY:"scroll",height:"88vh", padding:"2rem 1rem", paddingBottom:"0rem", backgroundColor:"#015E87" }}>
+        <div style={{position:"relative" , overflowY:"scroll",height:"88vh", padding:"2rem 1rem", paddingBottom:"0rem", backgroundColor:"#015E87" }}>
            {loading && !error && <Loader/>}
            {error!=="" && <Error error={error}/>}
 
@@ -46,7 +46,7 @@ export default function OpenChapter({selectedBook, chapter, setChapter}){
 }
 
 function Loader(){
-    return(<div className="loader"></div>)
+    return(<div style={{width:"80vw", height:"89vh"}}><div className="loader"></div></div>)
 }
 function Error(error){
     return<div>{error}</div>
