@@ -1,7 +1,7 @@
 .bookListContainer{
     display: flex;
     flex-basis: 20%;
-    height: 90vh;
+    height: 89vh;
     flex-shrink: 1;
     justify-content: space-between;
     max-width: 17rem;
@@ -15,7 +15,7 @@
 .bookList li{
     cursor: pointer;
     /* border: 1px solid #015E87; */
-    height: 2rem;
+    height: 2.4rem;
     display: flex;
     align-items: center;
     padding-left: 2rem;

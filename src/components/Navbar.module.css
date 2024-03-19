@@ -25,3 +25,48 @@
     padding: 0.7rem;
     margin-bottom: -0.9rem;
 }
+
+.mobileNav{
+    display: none;
+    padding-right: 3rem;
+    justify-content: space-between;
+    gap: 2rem;
+    height: 6vh;
+    position: relative;
+    z-index: 5;
+    background-color: #FFEDD5;
+    color: #015E87;
+    padding-left: 2rem;
+}
+.mobileNav ul{
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 6vh;
+    border-top: 1px solid #015E87;
+    display: flex;
+    justify-content: space-around;
+    height: 3rem;
+    align-items: center;
+    transition: all 0.5s ease;
+    background-color: #FFEDD5;
+}
+
+.mobileNav .brand a{
+    font-size: 1rem;
+}
+
+@media(max-width:750px){
+    .mobileNav{
+        display: flex;
+    }
+    .desktopNav{
+        display: none;
+    }
+}
+@media(max-width:400px){
+    .mobileNav ul a{
+        font-size: 0.9rem;
+    }
+}

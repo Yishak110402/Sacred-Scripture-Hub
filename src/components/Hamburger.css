@@ -1,0 +1,29 @@
+.hamburger{
+    height: 100%;
+    width: 3rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.closed span{
+    display: block;
+    width: 70%;
+    height: 7%;
+    background-color: #015E87;
+    margin: 0.4rem auto;
+}
+.open span{
+    display: block;
+    width: 40%;
+    height: 7%;
+    background-color: #015E87;
+    margin: 0.4rem auto;
+}
+.open span{
+    background-color: transparent;
+    font-size: 3rem;
+    position: absolute;
+    top: -0.8rem;
+    left: 20%;
+}

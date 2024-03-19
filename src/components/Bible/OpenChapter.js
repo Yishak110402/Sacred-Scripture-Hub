@@ -2,8 +2,10 @@ import { useEffect, useState } from "react"
 import styles from './OpenChapter.module.css'
 
 export default function OpenChapter({selectedBook, chapter, setChapter}){
+    // key = 0216d83a85msh35ee9015109206dp134af1jsnf6f532063f02
     const [wholeChapter, setWholeChapter] = useState([])
     const [loading, setLoading] = useState(false)
+    const [verse, setVerse] = useState('');
     const [error, setError] = useState("")
     useEffect(function(){
         async function getVerses(){
@@ -28,18 +30,8 @@ export default function OpenChapter({selectedBook, chapter, setChapter}){
         setChapter(1)
      },[selectedBook])
 
-     useEffect(function(){
-        async function getRandom(){
-            const res = await fetch("https://bible-api.com/?random=verse")
-            const data = await res.json()
-            console.log(data);
-        }
-        getRandom()
-     },[])
-
-
     return(
-        <div style={{position:"relative" , width:"100%", overflowY:"scroll",height:"90vh", padding:"2rem 1rem", paddingBottom:"0rem", backgroundColor:"#015E87" }}>
+        <div style={{position:"relative" , width:"100%", overflowY:"scroll",height:"88vh", padding:"2rem 1rem", paddingBottom:"0rem", backgroundColor:"#015E87" }}>
            {loading && !error && <Loader/>}
            {error!=="" && <Error error={error}/>}
 
