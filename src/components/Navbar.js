@@ -4,7 +4,7 @@ import { useState } from "react";
 import './Hamburger.css'
 export default function Navbar() {
 
-  const [mobileNavOpen, setMobileNavOpen] = useState(true)
+  const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const mobileTranslate = mobileNavOpen? 0 :"-10rem"
   
   
@@ -43,7 +43,7 @@ export default function Navbar() {
             <span>X</span>}
             
           </div>    
-            <ul style={{transform:`translateY(${mobileTranslate})`}}>
+            <ul style={{transform:`translateY(${mobileTranslate})`}} onClick={()=>(setMobileNavOpen(false))}>
             <li>
               <NavLink to="/">Home</NavLink>
             </li>

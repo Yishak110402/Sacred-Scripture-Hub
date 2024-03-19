@@ -56,6 +56,10 @@
 .mobileNav .brand a{
     font-size: 1rem;
 }
+.mobileNavLinks a{
+    text-decoration: none;
+    color: inherit;
+}
 
 @media(max-width:750px){
     .mobileNav{

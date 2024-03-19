@@ -1,7 +1,6 @@
 .newspaperForm{
-    /* width: 100vw; */
     background-position: left 70%;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 2rem 5rem;
     position: relative;
@@ -22,6 +21,7 @@
 .newspaperForm h1{
     color: #FFEDD5;
     background-clip: text;
+    font-size: 2rem;
 }
 .newspaperForm button{
     width: 5rem;
@@ -77,4 +77,10 @@
 }
 .verification div h1{
     color: #015E87;
+}
+
+@media(max-width:800px){
+    .newspaperForm h1{
+        font-size: 1.2rem;
+    }
 }

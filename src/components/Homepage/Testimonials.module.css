@@ -2,27 +2,23 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
-    width: 100%;
     padding: 7rem 3rem;
-    padding-bottom: 11rem;
+    padding-bottom: 6rem;
     background-color: #015E87;
     color: #FFEDD5;
 }
 .testimonials > h1{
+    display: block;
     font-size: 4rem;
     transform: rotate(-90deg);
     margin-top: -4rem;
-    flex-basis: 10rem;
-    margin-left: -10rem;
-    margin-bottom: -10rem;
-    margin-right: -5rem;
-    
+    flex-basis: 6rem;    
 }
 .testimonials div{
     width: 65rem;
     margin-top: 4rem;
-    margin-left: -40rem;
     position: relative;
+    flex-grow: 1;
 }
 .testimonials p{
     font-size: 1.1rem;
@@ -53,4 +49,28 @@
 .rightArrow{
     top: 50%;
     right: 0;
+}
+
+@media(max-width:900px){
+    .testimonials{
+        flex-flow: column;
+        padding: 7rem 5rem;
+        justify-content: center;
+    }
+    .testimonials div{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .testimonials h1{
+        transform: rotate(0);
+        font-size: 2.5rem;
+    }
+}
+@media(max-width:500px){
+    .leftArrow{
+        left: -80px;        
+    }
+    .rightArrow{
+        right: -80px;
+    }
 }

@@ -1,11 +1,13 @@
 .about{
-    width: 100%;
+    /* width: 100vw; */
     padding: 3rem;
+    padding-right: 0;
     background-color: #FFEDD5;
     color: #708087;
+    overflow-x: hidden;
 }
 .aboutText{
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -21,8 +23,9 @@
     border-radius: 10px;
 }
 .aboutText div{
-    padding-right: 6rem;
-    padding-top: 3rem;
+    width: 40%;
+    /* margin-right: 6rem; */
+    /* padding-top: 3rem; */
 }
 .aboutText p{
     font-size: 1.1rem;
@@ -30,7 +33,27 @@
     line-height: 1.5rem;
 }
 
+@media(max-width:1100px){
+    .aboutText img{
+        height: 100%;
+        width: 50%;
+    }
+}
 
+@media(max-width:900px){
+    .aboutText{
+        flex-flow: column;
+    }
+    .aboutText *{
+        margin: 0 auto;
+    }
+    .aboutText div{
+        width: 100%;
+    }
+    .aboutText img{
+        width: 70%;
+    }
+}
 
 
 

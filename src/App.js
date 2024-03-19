@@ -1,4 +1,4 @@
-import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Homepage from './pages/Homepage'
 import Bible from './pages/Bible'
 import Navbar from "./components/Navbar";
@@ -16,7 +16,7 @@ export default function App(){
       <Navbar/>
       <Routes>
         <Route index element={<Homepage/>}/>
-        <Route path="/home" element={<Homepage/>}/>
+        {/* <Route path="/home" element={<Homepage/>}/> */}
         <Route path="/bible" element={<Bible setBooks={setBooks} books={books}/>}/>
       </Routes>
       <Footer/>
